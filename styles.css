@@ -1,0 +1,147 @@
+* {
+    margin:0;
+}
+
+body {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#header {
+    background-color: #283618;
+    width:100vw;
+    height: 5vh;
+    min-height: 50px
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr 90%;
+    height: 85vh;
+}
+
+#contenedor-tarjetas {
+    display: flex;
+    align-items:center;
+    flex-grow: 1;
+    padding: 1vw 1vw;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 10fr 1fr;
+    background-color: #283618;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30vw;
+    min-width: 225px;
+    max-width: 275px;
+    height: max-content;
+    min-height: 425px;
+    max-height: 575px;
+    text-align: center;
+    gap: 10px;
+}
+
+.header-tarjeta {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#606c38;
+    border-radius: 5px;
+    padding: 4%;
+    gap: 6px;
+}
+
+.foto {
+    display:block;
+    object-fit: contain;
+    background-color: #fefae04D;
+    border-radius: 5px;
+}
+
+.nombre-descripcion {
+    background-color: #fefae04D;
+    border-radius: 5px;
+    width: 98%;
+}
+
+.cuerpo-tarjeta {
+    display:flex;
+    flex-direction: column;
+    background-color: #606c38;
+    border-radius: 5px;
+    padding:4%;
+    gap: 4px
+}
+
+.texto-tarjeta {
+    background-color:#fefae04D;
+    border-radius: 5px;
+    flex-grow: 1;
+    height: 20vw;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.boton-tarjeta {
+    background-color: #fefae04D;
+}
+
+#footer-principal {
+    background-color: #283618;
+    height: 10vh;
+    width: 100vw;
+    min-height: 50px;
+    position:absolute;
+    bottom: 0;
+}
+
+.tags {
+    display:flex;
+    background-color:#fefae04D;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    padding: 5px
+}
+
+.tag {
+    background-color: rgba(40, 54, 24, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 0 2px
+}
+
+.pie-tarjeta {
+    display:flex;
+    justify-content: center;
+    background-color: #606c38;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.boton-padre {
+    flex-grow: 1;
+}
+
+.boton-tarjeta {
+    background-color:#fefae04D;
+    border:none;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+.boton-tarjeta:hover {
+    background-color: hsla(52, 94%, 74%, 0.302);
+}
+
+aside {
+    background-color: #606c38;
+}
